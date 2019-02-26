@@ -86,7 +86,7 @@ then
   sudo apt-key add jcameron-key.asc
   sudo apt update
   sudo apt install webmin
-  apt-get install perl rrdtool librrds-perl sysstat
+  apt-get install perl rrdtool librrds-perl sysstat -y
   echo "Done..."
 else
   echo "Cancelled"
@@ -96,7 +96,7 @@ read -p "Install Firefox ? <y/N> " prompt
 if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "YES"|| $prompt == "Yes" ]]
 then
   echo "install Firefox"
-  sudo apt-get install firefox
+  sudo apt-get install firefox -y
   echo "Done..."
 else
   echo "Cancelled"
