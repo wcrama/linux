@@ -87,6 +87,7 @@ then
   sudo apt update
   sudo apt install webmin
   apt-get install perl rrdtool librrds-perl sysstat -y
+  echo "Install Dependencies on RHEL/CentOS/Fedora/OEL: # yum install perl rrdtool perl-rrdtool perl-CGI sysstat"
   echo "Done..."
 else
   echo "Cancelled"
