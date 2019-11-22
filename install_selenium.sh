@@ -34,8 +34,14 @@ then
   sudo apt-get update -y
   echo "Downloading selenium"
   wget https://selenium-release.storage.googleapis.com/3.141/selenium-server-standalone-3.141.59.jar
-  echo "Install PHP 7.2 + Addons"
-  sudo apt-get install php7.2-zip php7.2-curl -y
+  echo "Install APACHE + PHP 7.2 + Addons"
+  apt-get install apache2 -y
+  systemctl start apache2
+  systemctl enable apache2
+  sudo apt-get install software-properties-common python-software-properties
+  sudo add-apt-repository -y ppa:ondrej/php
+  sudo apt-get update
+  sudo apt-get install php7.2-curl php7.2-gd php7.2-json php7.2-mbstring php7.2-intl php7.2-mysql php7.2-xml php7.2-zip -y
   sudo apt-get install php-gd php-xml php7.2-mbstring -y
   echo "Install Composer"
   sudo apt install composer -y
