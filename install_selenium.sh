@@ -26,8 +26,6 @@ EOF
 read -p "Are you sure you want to continue? <y/N> " prompt
 if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "YES"|| $prompt == "Yes" ]]
 then
-  echo "Become SuperUser"
-  sudo su -
   echo "Creating folder and move to it..."
   cd Desktop/
   mkdir selenium
