@@ -27,7 +27,7 @@ read -p "Are you sure you want to continue? <y/N> " prompt
 if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "YES"|| $prompt == "Yes" ]]
 then
   echo "Creating folder and move to it..."
-  cd Desktop/
+  cd ~
   mkdir selenium
   cd selenium
   echo "Running Update..."
