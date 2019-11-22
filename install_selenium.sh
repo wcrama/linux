@@ -27,14 +27,18 @@ read -p "Are you sure you want to continue? <y/N> " prompt
 if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "YES"|| $prompt == "Yes" ]]
 then
   echo "Creating folder and move to it..."
+  sleep 5
   cd ~
   mkdir selenium
   cd selenium
   echo "Running Update..."
+  sleep 5
   sudo apt-get update -y
   echo "Downloading selenium"
+  sleep 5
   wget https://selenium-release.storage.googleapis.com/3.141/selenium-server-standalone-3.141.59.jar
   echo "Install APACHE + PHP 7.2 + Addons"
+  sleep 5
   apt-get install apache2 -y
   systemctl start apache2
   systemctl enable apache2
@@ -44,12 +48,16 @@ then
   sudo apt-get install php7.2-curl php7.2-gd php7.2-json php7.2-mbstring php7.2-intl php7.2-mysql php7.2-xml php7.2-zip -y
   sudo apt-get install php-gd php-xml php7.2-mbstring -y
   echo "Install Composer"
+  sleep 5
   sudo apt install composer -y
   echo "Install facebook/webdriver"
+  sleep 5
   composer require facebook/webdriver
   echo "Install openjdk 8"
+  sleep 5
   sudo apt-get install openjdk-8-jre -y
   echo "Download Chrome + Firefox Webdrivers"
+  sleep 5
   wget https://chromedriver.storage.googleapis.com/2.34/chromedriver_linux64.zip
   unzip chromedriver_linux64.zip
   sudo mv -i chromedriver /usr/bin/.
@@ -58,6 +66,7 @@ then
   sudo mv -i geckodriver /usr/bin/.
 
   echo "CREATE YOUR BOILERPLATE AND RUN !!!"
+  sleep 10
 
 else
   echo "Cancelled"
