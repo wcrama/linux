@@ -29,7 +29,7 @@ then
   echo "Become SuperUser"
   sudo su -
   echo "Creating folder and move to it..."
-  cd /Desktop
+  cd Desktop/
   mkdir selenium
   cd selenium
   echo "Running Update..."
