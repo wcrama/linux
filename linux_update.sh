@@ -50,7 +50,7 @@ read -p "do-release-upgrade ? <y/N> " prompt
 if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "YES"|| $prompt == "Yes" ]]
 then
   echo "Running do-release-upgrade..."
-  sudo do-release-upgrade
+  sudo do-release-upgrade -y
   echo "Done..."
 else
   echo "Cancelled"
