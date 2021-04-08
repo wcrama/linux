@@ -39,7 +39,10 @@ fi
 read -p "Install AIOZ User ? <y/N> " prompt
 if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "YES"|| $prompt == "Yes" ]]
 then
-  sudo adduser aioz
+  username=aioz
+  password=aioz
+  adduser --gecos "" --disabled-password $username
+  chpasswd <<<"$username:$password"
 else
   echo "Cancelled"
 fi
