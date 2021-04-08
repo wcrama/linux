@@ -53,7 +53,7 @@ read -p "Install AIOZ Node ? <y/N> " prompt
 if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "YES"|| $prompt == "Yes" ]]
 then
   cd /home/aioz/
-  sudo apt-get install libnss3 -y
+  sudo apt-get install unzip libnss3 -y
   wget https://s3-ap-southeast-1.amazonaws.com/brandmein.dev/AIOZNode-0.6.6.zip
   unzip AIOZNode-0.6.6.zip
   chmod +x "AIOZ Node-0.6.6.AppImage"
