@@ -23,6 +23,8 @@ Welcome to AIOZ Node installer !
 This script has been build because i was getting tired of doing this all over again...
 1. By pressing 'y' you agree to update & install AIOZ to your system.
 
+EOF
+
 read -p "Are you sure you want to continue? <y/N> " prompt
 if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "YES"|| $prompt == "Yes" ]]
 then
