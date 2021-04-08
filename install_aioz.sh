@@ -55,7 +55,7 @@ then
   cd /home/aioz/
   sudo apt-get install unzip libnss3 -y
   wget https://s3-ap-southeast-1.amazonaws.com/brandmein.dev/AIOZNode-0.6.7.zip
-  unzip AIOZNode-0.6.6.zip
+  unzip AIOZNode-0.6.7.zip
   chmod +x "AIOZ Node-0.6.7.AppImage"
   su aioz
   ./"AIOZ Node-0.6.7.AppImage"
