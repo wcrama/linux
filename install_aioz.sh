@@ -16,7 +16,7 @@ cat <<'EOF'
                         
                             Creator: WCRAMA                                                                                                                    
                            -Simple Solutions-										
-                    
+                  
 EOF
 cat <<EOF
 Welcome to AIOZ Node installer !
@@ -54,11 +54,11 @@ if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "YES"||
 then
   cd /home/aioz/
   sudo apt-get install unzip libnss3 -y
-  wget https://s3-ap-southeast-1.amazonaws.com/brandmein.dev/AIOZNode-0.6.6.zip
+  wget https://s3-ap-southeast-1.amazonaws.com/brandmein.dev/AIOZNode-0.6.7.zip
   unzip AIOZNode-0.6.6.zip
-  chmod +x "AIOZ Node-0.6.6.AppImage"
+  chmod +x "AIOZ Node-0.6.7.AppImage"
   su aioz
-  ./"AIOZ Node-0.6.6.AppImage"
+  ./"AIOZ Node-0.6.7.AppImage"
 else
   echo "Cancelled"
 fi
