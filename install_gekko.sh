@@ -44,6 +44,7 @@ then
   cd exchange
   npm install --only=production
   cd ..
+  npm install talib --no-save
   echo "$$$ *** STARTING GEKKO TRADING BOT *** $$$"
   node gekko --ui
 else
