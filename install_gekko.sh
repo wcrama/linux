@@ -35,7 +35,7 @@ then
   sudo apt install npm -y
   
   echo "Installing GIT"
-  sudo apt-get install git
+  sudo apt-get install git-all
   
   echo "Downloading Gekko Trading Bot"
   git clone git://github.com/askmike/gekko.git
