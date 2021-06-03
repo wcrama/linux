@@ -26,16 +26,19 @@ if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "YES"||
 then
   echo "Running Update..."
   sudo apt-get update -y
+  
   echo "Running Upgrade..."
   sudo apt-get upgrade -y
-  echo "Download Node JS"
-  curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+  
   echo "Installing Node JS"
-  sudo apt-get install -y nodejs
+  sudo apt install nodejs -y
+  sudo apt install npm -y
+  
   echo "Installing GIT"
   sudo apt-get install git
+  
   echo "Downloading Gekko Trading Bot"
-  git clone git://github.com/askmike/gekko.git -b stable
+  git clone git://github.com/askmike/gekko.git
   cd gekko
   npm install --only=production
   cd exchange
