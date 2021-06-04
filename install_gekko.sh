@@ -44,7 +44,9 @@ then
   cd exchange
   npm install --only=production
   cd ..
-  npm install talib --no-save
+  npm install talib --no-save -y
+  npm install tulind --no-save -y
+  
   echo "$$$ *** STARTING GEKKO TRADING BOT *** $$$"
   node gekko --ui
 else
